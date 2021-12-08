@@ -6,16 +6,17 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.24.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.4.0"
   },
   "scripts": {
     "start": "PORT=3001 react-scripts start",
+    "start:silent": "PORT=3001 BROWSER=none react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "start:silent": "PORT=3001 BROWSER=none react-scripts start",
     "cy:open": "cypress open",
     "cypress": "start-server-and-test start:silent http://localhost:3001/ cy:open"
   },
@@ -35,9 +36,7 @@
     ]
   },
   "devDependencies": {
-    "cypress": "^4.0.2",
-    "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.2",
+    "cypress": "^9.1.1",
     "react-test-renderer": "^16.12.0",
     "start-server-and-test": "^1.11.6"
   }
