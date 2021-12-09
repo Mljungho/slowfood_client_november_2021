@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Products from "./modules/Products";
+import Orders from "./modules/Orders"
 
 const App = () => {
   const [products, setProducts] = useState([]);
@@ -11,7 +12,9 @@ const App = () => {
   }, []);
 
   const addToOrder = (id) => {
-    debugger;
+    Orders.create(id, 99).then(response => {
+      debugger
+    })
   };
 
   const productsList = products.map((product) => {
@@ -26,7 +29,7 @@ const App = () => {
   return (
     <>
       <h1>Slowfood</h1>
-      <div data-cy="products-list">{productsList}</div>
+      <div data-cy="product-list">{productsList}</div>
     </>
   );
 };

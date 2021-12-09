@@ -1,9 +1,7 @@
-import axios from "axios";
-const baseUrl = "http://localhost:3000/api";
-
+import { api } from "./network";
 const Products = {
   async index() {
-    const { data } = await axios.get(`${baseUrl}/products`);
+    const { data } = await api.get(`/products`);
     return data.products;
   },
 };
