@@ -11,8 +11,15 @@
         "price": 20.0,
         "created_at": "2021-12-09T09:38:42.718Z",
         "updated_at": "2021-12-09T09:38:42.718Z"
+      },
+      {
+        "id": 3,
+        "name": "Hamburger",
+        "price": 20.0,
+        "created_at": "2021-12-09T09:38:42.718Z",
+        "updated_at": "2021-12-09T09:38:42.718Z"
       }
     ]
   },
-  "message": "Pizza was added to your order!"
+  "message": "Hamburger was added to your order!"
 }
